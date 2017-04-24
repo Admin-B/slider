@@ -1,0 +1,197 @@
+.slider {
+    position: relative;
+    display: none;
+
+    width:250px;
+    height: 125px;
+
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+.slider > .slider-images {
+    width: 100%;
+    height: 100%;
+
+    white-space: nowrap; 
+    word-break: break-all;
+
+    letter-spacing: -6.5px;
+
+    overflow: hidden;
+}
+.slider > .slider-images > div{
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height:100%;
+}
+.slider > .slider-images > div > span {
+    display: inline-block;
+    height:100%;
+}
+.slider > .slider-images > div > span img {
+    display: inline-block;
+    min-height: 100%;
+    max-height: 100%;
+}
+.slider > .slider-btn {
+    position: absolute;
+    top:0;
+
+    width: 4%;
+    min-width: 25px;
+
+    height: 100%;
+
+    background-color:rgba(68,108,179,1);
+
+    background-size: 15px;
+    cursor:pointer;
+    opacity: 0.6;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    z-index:1;
+
+}
+.slider > .slider-btn::before{
+    position: absolute;
+    top:50%;
+    left:50%;
+
+    display: block;
+    content: '';
+
+    margin-top:-7.5px;
+    margin-left:-7.5px;
+
+    width:15px;
+    height:15px;
+
+    background-image: url('./arrow-sprite.png');
+    background-repeat: no-repeat;
+    background-size:15px;
+}
+
+.slider > .slider-left {
+    left:0;
+}
+.slider > .slider-left::before {
+    background-position:0 0;
+}
+
+.slider > .slider-right {
+    right:0;
+}
+.slider > .slider-left::before{
+    background-position:0 -15px;
+}
+.slider > .slider-btn:hover{
+    min-width: 30px;
+    width:5%;
+    opacity: 1;
+}
+.slider > .slider-btn:active{
+    background-color:rgba(52, 73, 94,1);
+}
+
+/****************************************** up down ********************************************/
+.slider[up-down] > .slider-btn{
+    left:0;
+    width:100%;
+    height: 5%;
+    min-height:20px;
+}
+.slider[up-down] > .slider-btn:hover{
+    height: 6%;
+    min-height:25px;
+}
+.slider[up-down] > .slider-left {
+    top:0;
+}
+.slider[up-down] > .slider-left::before{
+    background-position: 0 -30px;
+}
+.slider[up-down] > .slider-right {
+    top: auto!important;
+    bottom:0;
+}
+.slider[up-down] > .slider-right::before {
+    background-position: 0 -45px;
+}
+
+.slider[up-down] > .slider-images > div > span {
+    width:100%;
+    height: auto;
+}
+.slider[up-down] > .slider-images > div > span img {
+    display: block;
+    width:100%;
+    max-height:none;
+    min-height:auto;
+}
+.slider[btn-box] > .slider-btn:hover{
+    width: 50px;
+    height: 50px;
+}
+.slider[btn-box] > .slider-right{
+    top:auto;
+    left:auto;
+    right:0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+}
+.slider[btn-box] > .slider-left{
+    top:auto;
+    left:auto;
+    right:50px;
+    bottom:0;
+    width: 50px;
+    height: 50px;
+}
+.slider[up-down][btn-box] > .slider-left{
+    bottom:50px;
+    right: 0px;
+}
+/**************************************************************************************/
+/* btn style */
+/**************************************************************************************/
+.slider.slider-red > .slider-btn{
+    background:#EC644B;
+}
+.slider.slider-red > .slider-btn:active{
+    background:#96281B;
+}
+
+.slider.slider-green > .slider-btn{
+    background:#90C695;
+}
+.slider.slider-green > .slider-btn:active{
+    background:#1E824C;
+}
+
+.slider.slider-purple > .slider-btn{
+    background:#663399;
+}
+.slider.slider-purple > .slider-btn:active{
+    background:#442265;
+}
+
+.slider.slider-yellow > .slider-btn{
+    background:#F4D03F;
+}
+.slider.slider-yellow > .slider-btn:active{
+    background: #e2bb1e;
+}
+
+.slider.slider-orange > .slider-btn{
+    background:#F89406;
+}
+.slider.slider-orange > .slider-btn:active{
+    background:#D35400;
+}
+
+.slider.slider-gray > .slider-btn{
+    background:#6C7A89;
+}
+.slider.slider-gray > .slider-btn:active{
+    background:#333;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Slider Example</title>
+    <link href="./css/slider.css" rel="stylesheet">
+    <script src="./js/slider.js"></script>
+    <style>
+        .slider {
+            margin-bottom: 10px;
+        }
+        
+        body>div {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- custom slider -->
+        <b>custom </b>
+        <div class="slider">
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+
+        <!-- end-to-end -->
+        <b>end-to-end </b>
+        <div class="slider slider-green" end-to-end>
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+
+        <!-- btn-box -->
+        <b>btn-box</b>
+        <div class="slider slider-purple" btn-box>
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+
+        <!-- walk-size -->
+        <b>walk-size=5</b>
+        <div class="slider slider-yellow" walk-size=5>
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+
+        <!-- auto-slide -->
+        <b>auto-slide=-1 / end-to-end /<br/>
+        auto-slide-interval=1000 /<br/>
+         walk-size=10</b>
+        <div class="slider slider-gray" auto-slide=-1 end-to-end auto-slide-interval=1000 walk-size=10>
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+    </div>
+    <div>
+        <!-- up-down -->
+        <b>up-down</b>
+        <div class="slider slider-orange" up-down style="height:300px">
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+
+        <!-- up-down / btn-box -->
+        <b>up-down / btn-box</b>
+        <div class="slider slider-red" up-down btn-box style="height:300px">
+            <img src="./resources/cat.jpg">
+            <img src="./resources/dog.png">
+        </div>
+    </div>
+    <div>
+        <pre style="background:#fff;color:#3b3b3b"><span style="color:#af82d4">&lt;!-- custom slider --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>custom <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span><b>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</b>
+<span style="color:#af82d4">&lt;!-- end-to-end --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>end-to-end <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider slider-green"</span> <span style="color:#963dff">end-to-end</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+<span style="color:#af82d4">&lt;!-- btn-box --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>btn-box<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider slider-yellow"</span> <span style="color:#963dff">btn-box</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+<span style="color:#af82d4">&lt;!-- walk-size --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>walk-size=5<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider slider-orange"</span> <span style="color:#963dff">walk-size</span>=5></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+<span style="color:#af82d4">&lt;!-- auto-slide --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>auto-slide=-1 / end-to-end /<span style="color:#7a7a7a">&lt;<span style="color:#016cff">br</span>/></span>
+auto-slide-interval=1000 /<span style="color:#7a7a7a">&lt;<span style="color:#016cff">br</span>/></span>
+    walk-size=10<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider slider-gray"</span> <span style="color:#963dff">auto-slide</span>=-1 <span style="color:#963dff">end-to-end</span> <span style="color:#963dff">auto-slide-interval</span>=1000 <span style="color:#963dff">walk-size</span>=10></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+<span style="color:#af82d4">&lt;!-- up-down --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>up-down<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider"</span> <span style="color:#963dff">up-down</span> <span style="color:#963dff">style</span>=<span style="color:#666">"height:300px"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+<span style="color:#af82d4">&lt;!-- up-down / btn-box --></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">b</span>></span>up-down / btn-box<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">b</span>></span>
+<span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"slider slider-red"</span> <span style="color:#963dff">up-down</span> <span style="color:#963dff">btn-box</span> <span style="color:#963dff">style</span>=<span style="color:#666">"height:300px"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/cat.jpg"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"./resources/dog.png"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+
+</pre>
+    </div>
+</body>
+
+</html>
